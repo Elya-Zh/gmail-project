@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 2px solid whitesmoke;
+}
+.header-left img {
+    object-fit: contain;
+    height: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left span {
+    padding: 10px;
+    cursor: pointer;
+}
+.header-middle {
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header-middle input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+.header-right{
+    display: flex;
+    padding-right: 20px;
+}
+.header-right span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.plus-sign {
+    background-image: url('https://www.gstatic.com/images/icons/material/colored_icons/2x/create_32dp.png');
+}
+
+.sidebar span {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+.material-icons {
+    color: gray;
+}
+.main-container {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+.container {
+    width: 100%;
+    height: 800px;
+    overflow-y: auto;
+}
+.card {
+    display: grid;
+    grid-template-columns: 15px 50px 150px 1fr 100px;
+   
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    color: rgb(109, 109, 109);
+    cursor: pointer;
+}
+.card span ,input{
+    display: block;
+    padding-left: 20px;
+}
+.card p {
+    padding: 30px 10px 20px;
+
+}
+.card-p{
+    display: flex;
+    justify-content:flex-start;
+    position: fixed;
+    padding: 10px 0 10px 30px;
+
+}
+.section-right img{
+   width: 30px;
+   height: 30px;
+   display: block;
+   padding: 10px;
+   cursor: pointer;
+}
+.section-right span {
+    margin-left: 15px;
+}
+
