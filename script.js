@@ -1,113 +1,51 @@
-let data = [
-    {id:1,
-    name:'LinkedIn',
-    title:'84 Lumber and others share their thoughts on LinkedIn',
-    date:'18 march'},
-    {id:2,
-        name:'Zillow',
-        title:'60626 Market Report',
-        date:'18 march'},
-        {id:3,
-            name:'Bank of America',
-            title:'Hello dear user, your statement is available in Mobile and Online Banking',
-            date:'15 march'},
-            {id:4,
-                name:'OfferUp ',
-                title:'Can’t find what you’re looking for in your neighborhood? 🔎🏘 Try shopping nationwide',
-                date:'18 march'},
-                {id:5,
-                    name:'LinkedIn',
-                    title:'84 Lumber and others share their thoughts on LinkedIn',
-                    date:'13 march'},
-                    {id:6,
-                        name:'Turing - U.S. Software Jobs',
-                        title:'Elya-Zh, We have awesome remote U.S. jobs waiting for engineers like you. 2',
-                        date:'11 march'},
-
-                        {id:7,
-                            name:'MoneyGram',
-                            title:'You’ve earned a reward – don’t miss it!',
-                            date:'11 march'},
-                            {id:8,
-                                name:'Macysonline.com',
-                                title:'Credit Card - Minimum Payment Due Alert',
-                                date:'11 march'},
-                                {id:9,
-                                    name:'Olive-Harvey College Adult Education',
-                                    title:'ACTION REQUIRED - Update your student information',
-                                    date:'13 march'},
-                                    {id:10,
-                                        name:'support@l.com',
-                                        title:'[Launch School] Community Update - March 11, 2022',
-                                        date:'11 march'},
-                                        {id:11,
-                                            name:'Veiled Collection',
-                                            title:'New Veiled Lounge Out Now!',
-                                            date:'10 march'},
-                                            {id:12,
-                                                name:'aselwilliams ',
-                                                title:'Re: [seytechschool/22-2-team2] compared numbers (PR #39)',
-                                                date:'10 march'},
-                                                {id:13,
-                                                    name:'MoneyGram',
-                                                    title:'You’ve earned a reward – don’t miss it!',
-                                                    date:'11 march'},
-                                                    {id:14,
-                                                        name:'Macysonline.com',
-                                                        title:'Credit Card - Minimum Payment Due Alert',
-                                                        date:'11 march'},
-                                                        {id:15,
-                                                            name:'Olive-Harvey College Adult Education',
-                                                            title:'ACTION REQUIRED - Update your student information',
-                                                            date:'13 march'},
-                                                            {id:16,
-                                                                name:'support@l.com',
-                                                                title:'[Launch School] Community Update - March 11, 2022',
-                                                                date:'11 march'},
-                                                                {id:17,
-                                                                    name:'Veiled Collection',
-                                                                    title:'New Veiled Lounge Out Now!',
-                                                                    date:'10 march'},
-                                                                    {id:18,
-                                                                        name:'aselwilliams ',
-                                                                        title:'Re: [seytechschool/22-2-team2] compared numbers (PR #39)',
-                                                                        date:'10 march'}
-
-
-
-]
-
+import  {primary } from './data.js'
 const mainContainer = document.querySelector('.container')
 const sidebarSection = document.querySelector('.sidebar')
 const inputValue = document.querySelector('#inputVal')
+let cardId = document.getElementById('card2')
 
+//let date = primary.new Date()
+
+let dataMessages = primary;
+
+
+
+function renderData(primary){
+    mainContainer.innerHTML = '';
+    for(let el of primary){
+        containerBody(el)
+        // console.log(el)
+    }
+}
+
+renderData(dataMessages);
 function containerBody(a){
    
-    let card = document.createElement('div');
-   card.innerHTML = `
-    <div class="card card2">
+    let card = `
+    <div class="card" id='card2'>
     <input type="checkbox" name="" id="checkbox">
     <span class="material-icons">
     star_outline
     </span>
     
-        <p>${a.name}</p>
-        <p class='card-title'>${a.title}</p>
+        <p>${a.senderName}</p>
+        <p class='card-title'>${a.messageTitle}</p>
         <p class='third'>${a.date}</p>
     
 </div>
     `
-   mainContainer.appendChild(card)
+   mainContainer.innerHTML +=card;
 }
-for(let i = 0; i < data.length; i++){
-    containerBody(data[i]);
+mainContainer.addEventListener('click',function(e){
+    console.log(e.target)
+})
 
-}
+
 let button = document.querySelector('button')
-button.addEventListener('mouseover',function(event){
+button.addEventListener('mouseover',function(){
 sidebarSection.style.width = '400px';
 sidebarSection.innerHTML = `
-<div class = 'sidebar-hidden'
+<div>
 <button>Compose
 <span class="material-icons">
                     add_circle_outline
@@ -140,16 +78,32 @@ sidebarSection.innerHTML = `
                                     `
 
                                 })
-
-
-card.addEventListener('mouseover',function(){
-    
-})    
-mainContainer.appendChild(card2)
-// for(let i = 0; i < data.length; i++){
-//     mainContainer(data[i]);
-
                                 
+                                button.addEventListener('mouseout', () => {
+                                   sidebarSection.style.width = '100px';    
+                                    
+                                  });                        
+
+
+// function hoverOver(a){
+//     for(let i = 0; i<data.length; i++){
+//         document.getElementById('card2').style.backgroundColor = 'red';
+//         cardId(a[id])
+
+//     }
+// }
+
+// cardId.addEventListener('click',(a)=>{
+//  cardId.innerHTML = `<div class='container'>
+//  <a>${a.attachments.icon}</a>
+//  <h1>${a.messageTitle}</h1>
+//  <h2>${a.senderEmail}</h2>
+//  <p>${a.messages.message}</p>
+//  </div>`
+ 
+// })
+
+
 
 
 
