@@ -1,113 +1,56 @@
-import  {primary } from './data.js'
+import  { primary } from './data.js'
+
 const mainContainer = document.querySelector('.container')
-const sidebarSection = document.querySelector('.sidebar')
-const inputValue = document.querySelector('#inputVal')
-let cardId = document.getElementById('card2')
+const pageInfoSpan = document.querySelector('.pages')
+// const sidebarSection = document.querySelector('.sidebar')
+// const inputValue = document.querySelector('#inputVal')
+// let cardId = document.getElementById('card2')
+const nextBtn = document.querySelector('#next')
+const prevBtn = document.querySelector('#prev')
 
-//let date = primary.new Date()
+let pageNumber = 0;
+let limit = 15;
 
-let dataMessages = primary;
+function containerBody(emails){
+    const start = pageNumber * limit + 1;
+    const end = (pageNumber + 1) * limit;
 
+    const partialEmails = emails.slice(start, end);
 
+    pageInfoSpan.innerText = `${start} - ${end} of ${emails.length}`;
 
-function renderData(primary){
-    mainContainer.innerHTML = '';
-    for(let el of primary){
-        containerBody(el)
-        // console.log(el)
+    for (let email of partialEmails) {
+        const emailTime = email.date.toLocaleString('en-US', {
+            hour: 'numeric',
+            minute: 'numeric',
+            hour12: true,
+        });
+        
+        let card = `
+            <div class="card" id='card2'>
+                <input type="checkbox" name="check-${email.id}" id="${email.id}">
+                <span class="material-icons">star_outline</span>
+                <span class="material-icons" style="color: rgb(245, 211, 113);">label_important</span>
+                <p>${email.senderName}</p>
+                <p class='card-title'>${email.messageTitle}</p>
+                <p class='third'>${emailTime}</p>
+            </div>`
+        mainContainer.innerHTML += card;
     }
 }
 
-renderData(dataMessages);
-function containerBody(a){
-   
-    let card = `
-    <div class="card" id='card2'>
-    <input type="checkbox" name="" id="checkbox">
-    <span class="material-icons">
-    star_outline
-    </span>
-    
-        <p>${a.senderName}</p>
-        <p class='card-title'>${a.messageTitle}</p>
-        <p class='third'>${a.date}</p>
-    
-</div>
-    `
-   mainContainer.innerHTML +=card;
-}
-mainContainer.addEventListener('click',function(e){
-    console.log(e.target)
-})
+containerBody(primary)
 
+nextBtn.addEventListener('click', function () {
+    mainContainer.innerHTML = '';
+    pageNumber++;
+    containerBody(primary);
+});
 
-let button = document.querySelector('button')
-button.addEventListener('mouseover',function(){
-sidebarSection.style.width = '400px';
-sidebarSection.innerHTML = `
-<div>
-<button>Compose
-<span class="material-icons">
-                    add_circle_outline
-                    </span></button>
-                    <span class="material-icons">
-                inbox</span>Inbox
-                <span class="material-icons">
-                    star
-                    </span>Starred
-                    <span class="material-icons">
-                        pending_actions
-                        </span>Snoozed
-                        <span class="material-icons">
-                        send
-                        </span>Sent Mail
-                        <span class="material-icons">
-                                save_as
-                                </span>Draft
-                                <span class="material-icons">
-                                    label
-                                    </span>Important
-                                    <span class="material-icons">
-                                    keyboard_arrow_down
-                                    </span> More
-                                    <p>Meet</p>
-                                    </div>
+prevBtn.addEventListener('click', function () {
+    mainContainer.innerHTML = '';
+    pageNumber--;
+    containerBody(primary);
+});
 
-
-
-                                    `
-
-                                })
-                                
-                                button.addEventListener('mouseout', () => {
-                                   sidebarSection.style.width = '100px';    
-                                    
-                                  });                        
-
-
-// function hoverOver(a){
-//     for(let i = 0; i<data.length; i++){
-//         document.getElementById('card2').style.backgroundColor = 'red';
-//         cardId(a[id])
-
-//     }
-// }
-
-// cardId.addEventListener('click',(a)=>{
-//  cardId.innerHTML = `<div class='container'>
-//  <a>${a.attachments.icon}</a>
-//  <h1>${a.messageTitle}</h1>
-//  <h2>${a.senderEmail}</h2>
-//  <p>${a.messages.message}</p>
-//  </div>`
- 
-// })
-
-
-
-
-
-
-
-
-
+console.log(pageNumber)

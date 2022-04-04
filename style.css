@@ -1,114 +1,115 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-border-bottom: 2px solid whitesmoke;
-}
-.header-left img {
-    object-fit: contain;
-    height: 100px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-.header-left {
+  }
+  header {
     display: flex;
     align-items: center;
-}
-.header-left span {
-    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 2px solid whitesmoke;
+  }
+  .header-left img {
     cursor: pointer;
-}
-.header-middle {
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .header-left span {
+    padding: 0 25px;
+    cursor: pointer;
+  }
+  .header-middle {
     display: flex;
     flex: 0.7;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border-radius: 7px;
     align-items: center;
     background-color: whitesmoke;
-    padding: 10px;
-    border-radius: 5px;
-}
-.header-middle span {
+  }
+  .header-middle span {
     cursor: pointer;
-}
-
-.header-middle input {
+  }
+  .header-middle input {
     width: 100%;
     border: none;
     padding: 10px;
     outline: none;
     font-size: medium;
     background-color: transparent;
-}
-.header-right{
+  }
+  .header-right{
     display: flex;
     padding-right: 20px;
-}
-.header-right span {
+  }
+  .header-right span {
     padding: 10px;
     cursor: pointer;
-}
-
-button.plus-sign {
-    background-image: url('https://www.gstatic.com/images/icons/material/colored_icons/2x/create_32dp.png');
-}
-
-.sidebar span {
-    display: block;
+  }
+  .sidebar span {
     padding: 5px;
+    display: block;
     cursor: pointer;
     margin-left: 10px;
-    
-}
-.material-icons {
+  }
+  .sidebar img {
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    border: 1px solid rgb(255, 251, 251);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+  }
+  .material-icons {
     color: gray;
-}
-.main-container {
+  }
+  .main-container {
     display: flex;
-    padding: 10px;
     margin: 10px;
-}
-.container {
+  }
+  .container {
     width: 100%;
     height: auto;
     overflow-y: auto;
-}
-.card {
+  }
+  .card {
     display: grid;
-    grid-template-columns: 15px 50px 150px 1fr 150px;
-   
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    color: rgb(109, 109, 109);
     cursor: pointer;
-}
-.card span ,input{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    align-items: center;
+    color: rgb(109, 109, 109);
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    grid-template-columns: 15px 30px 50px 150px 1fr 70px;
+  }
+  .card-top {
+    display: grid;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    align-items: center;
+    color: rgb(109, 109, 109);
+    border-bottom: 1px solid whitesmoke;
+    grid-template-columns: 53px 50px 1fr 100px 40px 40px;
+  }
+  .card span, input{
     display: block;
-    padding-left: 20px;
-}
-.card p {
-    padding: 30px 10px 20px;
-
-}
-.card-p{
-    display: flex;
-    justify-content:flex-start;
-    position: fixed;
-    padding: 10px 0 10px 30px;
-
-}
-.section-right img{
-   width: 30px;
-   height: 30px;
-   display: block;
+    padding-left: 10px;
+  }
+  .card p {
+    padding: 10px 0;
+  }
+  .section-right img{
+   height: 20px;
    padding: 10px;
+   display: block;
    cursor: pointer;
-}
-.section-right span {
-    margin-left: 15px;
-}
-
+   margin-bottom: 20px;
+  }
+  .section-right span {
+    margin-left: 10px;
+  }
