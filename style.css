@@ -52,6 +52,7 @@
     display: block;
     cursor: pointer;
     margin-left: 10px;
+    /* width: 100px; */
   }
   .sidebar img {
     padding: 5px;
@@ -81,20 +82,24 @@
     padding-left: 15px;
     align-items: center;
     color: rgb(109, 109, 109);
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border-bottom: 1px solid whitesmoke;
     grid-template-columns: 15px 30px 50px 150px 1fr 70px;
+    position: relative;
+    top: 40px;
   }
   .card-top {
     display: grid;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 69px;
     margin-right: 20px;
     padding-left: 15px;
     align-items: center;
     color: rgb(109, 109, 109);
     border-bottom: 1px solid whitesmoke;
     grid-template-columns: 53px 50px 1fr 100px 40px 40px;
+    position: absolute;
+    width: 80%;
   }
   .card span, input{
     display: block;

@@ -7,11 +7,14 @@ const pageInfoSpan = document.querySelector('.pages')
 // let cardId = document.getElementById('card2')
 const nextBtn = document.querySelector('#next')
 const prevBtn = document.querySelector('#prev')
+const menuBtn = document.querySelector('.material-icons')
+const sideBar = document.querySelector('.sidebar')
 
 let pageNumber = 0;
 let limit = 15;
 
 function containerBody(emails){
+    
     const start = pageNumber * limit + 1;
     const end = (pageNumber + 1) * limit;
 
@@ -53,4 +56,7 @@ prevBtn.addEventListener('click', function () {
     containerBody(primary);
 });
 
-console.log(pageNumber)
+menuBtn.addEventListener('click', function () {
+        sideBar.style.width = '100px'
+        console.log(sideBar)
+});
