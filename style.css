@@ -119,3 +119,48 @@
   .section-right span {
     margin-left: 10px;
   }
+  /* svg {
+    margin: 5px;
+    align-items: flex-start;
+  } */
+  .burger-menu{
+    display: flex;
+    text-align: center;
+  }
+  .burger-menu .burger-menu-par{
+    visibility: hidden;
+  }
+  #add {
+    margin-left: 60px;
+    border-radius: 50%;
+    background-color: rgb(248, 236, 195);
+    width: 50px;
+    height: 50px;
+  }
+
+  .notes {
+   /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    
+  }
+  .notes input {
+    margin-left: 70px;
+  }
+  .notes span,.notes p {
+   padding: 5px;
+   left: 0;
+  }
+  .apps {
+    display: flex;
+    margin: 15px;
+    
+  }
+  .apps p {
+    margin-left: 15px;
+    
+  }
+
+  
