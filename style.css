@@ -52,10 +52,8 @@
   }
   .sidebar span {
     padding: 5px;
-    /* display: block; */
     cursor: pointer;
     margin-left: 10px;
-    /* width: 100px; */
   }
   .sidebar img {
     padding: 5px;
@@ -120,44 +118,29 @@
   .section-right span {
     margin-left: 10px;
   }
-  /* svg {
-    margin: 5px;
-    align-items: flex-start;
-  } */
   .burger-menu {
     width: 160px;
     display: flex;
     align-items: center;
   }
+  .burger-menu:hover{
+    background-color: rgb(252,232,230);
+    border-radius: 15px;
+  }
   .burger-menu-par {
     margin-left: 15px;
-    visibility: hidden;
-    /* visibility: visible; */
+    display: none;
+    color: gray;
+    font-size:.875rem;
+    letter-spacing:.2px;
+    cursor: pointer;
   }
-  /* #add {
-    margin-left: 60px;
-    border-radius: 50%;
-    background-color: rgb(248, 236, 195);
-    width: 50px;
-    height: 50px;
-  } */
-
   .notes {
     margin: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* justify-content: center;
-    align-items: center;
-    color: gray; */
   }
-  /* .notes input {
-    margin-left: 70px;
-  } */
-  /* .notes span,.notes p {
-   padding: 5px;
-   left: 0;
-  } */
   .apps {
     padding: 5px;
     display: flex;
@@ -167,7 +150,6 @@
     cursor: pointer;
     border-radius: 3px;
     background-color: rgb(231, 231, 231);
-    /* color: rgb(193, 193, 193); */
   }
   .apps p {
     font-size: 15px;
@@ -196,8 +178,6 @@
     background-color: white;
     font-family: 'Roboto', 'Arial', sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    /* overflow: auto; */
-    /* z-index: 1; */
   }
   .note-folder {
     text-align: center;
@@ -243,7 +223,6 @@
     background-color: rgb(256, 256, 256);
     font-family: Helvetica,Arial,sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    /* font-family: 'Roboto', 'Arial', sans-serif; */
   }
   .support p {
     margin: 7px 0;
