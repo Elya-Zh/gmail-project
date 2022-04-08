@@ -74,12 +74,12 @@ prevBtn.addEventListener('click', function () {
     containerBody(primary);
 });
 
-menuBtn.addEventListener('mouseover', function () {
+sideBar.addEventListener('mouseover', function () {
     sideBar.style.width = '150px'
     burgerMenu.style.visibility="visible"
 });
 
-menuBtn.addEventListener('mouseout', function () {
+sideBar.addEventListener('mouseout', function () {
     sideBar.style.width = '48px'
     burgerMenu.style.visibility="hidden"
 });
