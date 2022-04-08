@@ -16,7 +16,8 @@
     align-items: center;
   }
   .header-left span {
-    padding: 0 25px;
+    /* padding: 0 25px; */
+    margin: 0 17px;
     cursor: pointer;
   }
   .header-middle {
@@ -126,11 +127,11 @@
     margin: 5px;
     align-items: flex-start;
   } */
-  .burger-menu{
+  .burger-menu {
     display: flex;
     text-align: center;
   }
-  .burger-menu .burger-menu-par{
+  .burger-menu .burger-menu-par {
     visibility: hidden;
   }
   /* #add {

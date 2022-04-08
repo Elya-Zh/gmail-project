@@ -63,7 +63,6 @@ containerBody(primary)
 nextBtn.addEventListener('click', function () {
     mainContainer.innerHTML = '';
     pageNumber++;
-    
     containerBody(primary);
 });
 
@@ -73,15 +72,24 @@ prevBtn.addEventListener('click', function () {
     pageNumber =0;
     containerBody(primary);
 });
+// console.log(sideBar.style.width)
+// menuBtn.addEventListener('click', function () {
+//     if (sideBar.style.width == false) {
+//         sideBar.style.width = '150px';
+//     } else if (sideBar.style.width = '150px') {
+//         sideBar.style.width = '48px';
+//     }
+//     console.log(sideBar.style.width)
+// })
 
 sideBar.addEventListener('mouseover', function () {
-    sideBar.style.width = '150px'
     burgerMenu.style.visibility="visible"
+    sideBar.style.width = '150px'
 });
 
 sideBar.addEventListener('mouseout', function () {
-    sideBar.style.width = '48px'
     burgerMenu.style.visibility="hidden"
+    sideBar.style.width = '48px'
 });
 
 inputValue.addEventListener('input',(e)=>{
