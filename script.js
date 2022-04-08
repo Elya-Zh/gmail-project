@@ -13,9 +13,7 @@ const keep = document.getElementById('keep')
 const sectionRight = document.querySelector('.right-menu-slide')
 const cardTop = document.querySelector('.card-top')
 const question = document.getElementById('question')
-const clear = document.querySelector('#delete')
 const burgerMenu = document.querySelectorAll('.burger-menu-par')
-const searchBtn = document.querySelector('.search')
 
 let pageNumber = 0;
 let limit = 15;
@@ -50,6 +48,7 @@ function containerBody(emails){
 }
 
 containerBody(primary)
+
 
 nextBtn.addEventListener('click', function () {
     mainContainer.innerHTML = '';
@@ -123,22 +122,26 @@ mainContainer.addEventListener('click',(event)=>{
     currentMessage.map( el => {
     everyEmail.setAttribute('class','eachDiv');
     mainContainer.appendChild(everyEmail)
+
+    
     everyEmail.innerHTML = `
     <div class ='eachDiv_header'>
-        <span class="material-icons" id='back'>arrow_back</span>
-        <span class="material-icons">archive</span>
-        <span class="material-icons">report</span>
-        <span class="material-icons">delete</span>
-        <span class="material-icons">mark_email_unread</span>
-        <span class="material-icons">watch_later</span>
-        <span class="material-icons">add_task</span>
-        <span class="material-icons">drive_file_move</span>
-        <span class="material-icons">label</span>
-        <span class="material-icons">more_vert</span>
+        <span class="material-icons icon-hover" id='back'>arrow_back</span>
+        <span class="material-icons icon-hover">archive</span>
+        <span class="material-icons icon-hover">report</span>
+        <span class="material-icons icon-hover">delete</span>
+        <span class="material-icons icon-hover">mark_email_unread</span>
+        <span class="material-icons icon-hover">watch_later</span>
+        <span class="material-icons icon-hover">add_task</span>
+        <span class="material-icons icon-hover">drive_file_move</span>
+        <span class="material-icons icon-hover">label</span>
+        <span class="material-icons icon-hover">more_vert</span>
     </div>
-    <h1>${el.messageTitle}</h1>
-    <h4>${el.senderName}</h4><p>${el.senderEmail}</p>
-    <p>${el.messages[0].message}</p>
+    <h1 class="head1">${el.messageTitle}</h1>
+    <h4 class="head1">${el.senderName}</h4>
+    <p class="head1">${el.senderEmail}</p>
+    <p class="head1">${el.messages[0].message}</p>
+    <img class="head1 img" src="${el.messages[0].attachments[0].icon}">
     
     `
 

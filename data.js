@@ -31,7 +31,12 @@ export const primary = [
     messages: [
       {
         message: 'Now you can use our services for free $$$.',
-        attachments: [],
+        attachments: [
+          {
+            text: 'heroku',
+            icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDFK2lzd-0-lDsUHv2u45DJH_oQ5xV8Pm4uG2_11EJBeX3h-YxK-t4sFaOvauAE99ygBw&usqp=CAU',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -46,7 +51,12 @@ export const primary = [
     messages: [
       {
         message: 'Time to congratulate your friends on their birthday!',
-        attachments: [],
+        attachments: [
+          {
+            text: 'facebook',
+            icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -62,7 +72,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -78,7 +93,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -94,7 +114,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -110,7 +135,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -127,7 +157,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -143,7 +178,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -159,7 +199,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -175,7 +220,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -191,7 +241,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -207,7 +262,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
@@ -223,7 +283,12 @@ export const primary = [
       {
         message:
           "Hey keep an eye on calendar and don't forget about our meeting today.",
-        attachments: [],
+        attachments: [
+          {
+            text: 'seytech logo',
+            icon: 'https://www.seytech.co/images/logo.png',
+          },
+        ],
         date: new Date(),
       },
     ],
