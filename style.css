@@ -16,15 +16,14 @@
     align-items: center;
   }
   .header-left span {
-    /* padding: 0 25px; */
     margin: 0 17px;
     cursor: pointer;
   }
   .header-middle {
     display: flex;
     flex: 0.7;
-    padding: 5px 15px;
     margin: 10px 0;
+    padding: 5px 15px;
     border-radius: 7px;
     align-items: center;
     background-color: whitesmoke;
@@ -53,7 +52,7 @@
   }
   .sidebar span {
     padding: 5px;
-    display: block;
+    /* display: block; */
     cursor: pointer;
     margin-left: 10px;
     /* width: 100px; */
@@ -62,8 +61,8 @@
     padding: 5px;
     cursor: pointer;
     margin-left: 5px;
-    border: 1px solid rgb(255, 251, 251);
     border-radius: 50px;
+    border: 1px solid rgb(255, 251, 251);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
   }
   .material-icons {
@@ -72,7 +71,6 @@
   .main-container {
     display: flex;
     margin: 10px;
-   
   }
   .container {
     width: 100%;
@@ -80,33 +78,32 @@
     overflow-y: auto;
   }
   .card {
+    top: 40px;
     display: grid;
     cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 15px;
+    position: relative;
     align-items: center;
     color: rgb(109, 109, 109);
-    /* justify-content: space-between; */
     border-bottom: 1px solid whitesmoke;
     grid-template-columns: 15px 30px 50px 150px 1fr 70px;
-    position: relative;
-    top: 40px;
   }
   .card-top {
+    width: 80%;
     display: grid;
     cursor: pointer;
     margin-left: 69px;
     margin-right: 20px;
     padding-left: 15px;
+    position: absolute;
     align-items: center;
     color: rgb(109, 109, 109);
     border-bottom: 1px solid whitesmoke;
     grid-template-columns: 53px 50px 1fr 100px 40px 40px;
-    position: absolute;
-    width: 80%;
   }
-  .card span, input{
+  .card span, input {
     display: block;
     padding-left: 10px;
   }
@@ -128,11 +125,14 @@
     align-items: flex-start;
   } */
   .burger-menu {
+    width: 160px;
     display: flex;
-    text-align: center;
+    align-items: center;
   }
-  .burger-menu .burger-menu-par {
+  .burger-menu-par {
+    margin-left: 15px;
     visibility: hidden;
+    /* visibility: visible; */
   }
   /* #add {
     margin-left: 60px;
@@ -143,13 +143,13 @@
   } */
 
   .notes {
+    margin: 15px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* justify-content: center;
     align-items: center;
     color: gray; */
-    justify-content: space-between;
-    margin: 15px;
-    align-items: center;
   }
   /* .notes input {
     margin-left: 70px;
@@ -159,19 +159,19 @@
    left: 0;
   } */
   .apps {
+    padding: 5px;
     display: flex;
     margin: 20px 40px;
-    padding: 5px;
   }
   .apps:hover {
     cursor: pointer;
-    /* color: rgb(193, 193, 193); */
-    background-color: rgb(231, 231, 231);
     border-radius: 3px;
+    background-color: rgb(231, 231, 231);
+    /* color: rgb(193, 193, 193); */
   }
   .apps p {
-    margin-left: 15px;
     font-size: 15px;
+    margin-left: 15px;
   }
 
   .eachDiv {
@@ -191,13 +191,13 @@
     top: 0;
     right: 0;
     height: 100vh;
+    min-width: 300px;
     position: absolute;
     background-color: white;
-    min-width: 300px;
-    /* overflow: auto; */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    /* z-index: 1; */
     font-family: 'Roboto', 'Arial', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* overflow: auto; */
+    /* z-index: 1; */
   }
   .note-folder {
     text-align: center;
@@ -207,12 +207,12 @@
     margin: 20px 0;
   }
   .right-menu-slide-top {
+    padding: 15px;
     display: flex;
     font-size: 15px;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
     color: rgb(114, 110, 110);
+    justify-content: space-between;
     border-bottom: 1px solid rgb(220, 218, 218);
   }
   .notes-icon{
@@ -236,13 +236,13 @@
     top: 50px;
     right: 170px;
     height: 160px;
+    font-size: 13px;
+    min-width: 220px;
     position: absolute;
     border-radius: 5px;
     background-color: rgb(256, 256, 256);
-    min-width: 220px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     font-family: Helvetica,Arial,sans-serif;
-    font-size: 13px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     /* font-family: 'Roboto', 'Arial', sans-serif; */
   }
   .support p {

@@ -190,36 +190,16 @@ mainContainer.addEventListener('click',(event)=>{
     mainContainer.appendChild(everyEmail)
     everyEmail.innerHTML = `
     <div class ='eachDiv_header'>
-    <span class="material-icons" id='back'>
-    arrow_back
-    </span>
-    <span class="material-icons">
-    archive
-    </span>
-    <span class="material-icons">
-report
-</span>
-<span class="material-icons">
-delete
-</span>
-<span class="material-icons">
-mark_email_unread
-</span>
-<span class="material-icons">
-watch_later
-</span>
-<span class="material-icons">
-add_task
-</span>
-<span class="material-icons">
-drive_file_move
-</span>
-<span class="material-icons">
-label
-</span>
-<span class="material-icons">
-more_vert
-</span>
+        <span class="material-icons" id='back'>arrow_back</span>
+        <span class="material-icons">archive</span>
+        <span class="material-icons">report</span>
+        <span class="material-icons">delete</span>
+        <span class="material-icons">mark_email_unread</span>
+        <span class="material-icons">watch_later</span>
+        <span class="material-icons">add_task</span>
+        <span class="material-icons">drive_file_move</span>
+        <span class="material-icons">label</span>
+        <span class="material-icons">more_vert</span>
     </div>
     <h1>${el.messageTitle}</h1>
     <h4>${el.senderName}</h4><p>${el.senderEmail}</p>
