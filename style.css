@@ -47,6 +47,9 @@
     padding: 10px;
     cursor: pointer;
   }
+  .sidebar {
+    width: 48px;
+  }
   .sidebar span {
     padding: 5px;
     display: block;

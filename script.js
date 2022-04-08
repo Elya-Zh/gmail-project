@@ -75,15 +75,13 @@ prevBtn.addEventListener('click', function () {
 });
 
 menuBtn.addEventListener('mouseover', function () {
-        sideBar.style.width = '150px'
-        burgerMenu.style.visibility="visible"
-        console.log(sideBar)
+    sideBar.style.width = '150px'
+    burgerMenu.style.visibility="visible"
 });
 
 menuBtn.addEventListener('mouseout', function () {
-    sideBar.style.width = '20px'
+    sideBar.style.width = '48px'
     burgerMenu.style.visibility="hidden"
-    console.log(sideBar)
 });
 
 inputValue.addEventListener('input',(e)=>{
@@ -92,8 +90,6 @@ inputValue.addEventListener('input',(e)=>{
     let filtered = primary.filter(el=>{
         return el.senderName.toLowerCase().includes(search.toLowerCase())
     })
-    console.log(filtered)
-    console.log(search)
     containerBody(filtered)
 })
 
